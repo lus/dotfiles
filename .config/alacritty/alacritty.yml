@@ -1,0 +1,26 @@
+env:
+  TERM: xterm-256color
+
+window:
+  padding:
+    x: 10
+    y: 10
+
+font:
+  normal:
+    family: Hack
+    style: Regular
+  bold:
+    family: Hack
+    style: Bold
+  italic:
+    family: Hack
+    style: Italic
+
+colors:
+  primary:
+    background: "0x111111"
+    foreground: "0xF0F0E6"
+
+shell:
+  program: /usr/bin/zsh
