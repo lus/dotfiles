@@ -24,6 +24,9 @@ bindsym $mod+Return exec alacritty
 # use $mod+Shift+q to kill the focused window
 bindsym $mod+Shift+q kill
 
+# use $mod+Escape to lock the screen
+bindsym $mod+Escape exec i3lock -c 000000
+
 # use $mod+d to start rofi
 bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 
