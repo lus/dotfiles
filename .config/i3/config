@@ -4,6 +4,10 @@ set $mod Mod4
 # define the font used for window titles
 font pango:Cantarella Bold 10
 
+# define the monitors
+set $monitor1 "HDMI-1"
+set $monitor2 "DVI-D-1"
+
 # use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
@@ -82,6 +86,18 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 
+# bind workspaces to monitors
+workspace $ws1 output $monitor1
+workspace $ws2 output $monitor1
+workspace $ws3 output $monitor1
+workspace $ws4 output $monitor1
+workspace $ws5 output $monitor1
+workspace $ws6 output $monitor2
+workspace $ws7 output $monitor2
+workspace $ws8 output $monitor2
+workspace $ws9 output $monitor2
+workspace $ws10 output $monitor2
+
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
 bindsym $mod+2 workspace number $ws2
@@ -143,9 +159,7 @@ for_window [class="^.*"] border pixel 2
 gaps outer 5
 gaps inner 10
 
-# configure my 2 monitors
-set $monitor1 "HDMI-1"
-set $monitor2 "DVI-D-1"
+# configure monitors
 exec --no-startup-id xrandr --output $monitor1 --primary --pos 0x0 --rotate normal --output $monitor2 --pos 1920x0 --rotate normal
 
 # run picom
