@@ -174,7 +174,7 @@ label-separator-foreground = ${colors.foreground-alt}
 menu-0-0 = reboot
 menu-0-0-exec = reboot
 menu-0-1 = power off
-menu-0-1-exec = poweroiff
+menu-0-1-exec = poweroff
 
 [settings]
 screenchange-reload = true
