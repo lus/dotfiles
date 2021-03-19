@@ -19,7 +19,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # use $mod+Return to start a terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec --no-startup-id alacritty
 
 # use $mod+Shift+q to kill the focused window
 bindsym $mod+Shift+q kill
@@ -173,3 +173,6 @@ exec_always --no-startup-id feh --bg-scale $HOME/.config/.wallpaper.jpg
 
 # run polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
+# run dunst
+exec_always --no-startup-id dunst
