@@ -5,8 +5,8 @@ set $mod Mod4
 font pango:Cantarella Bold 10
 
 # define the monitors
-set $monitor1 "HDMI-1"
-set $monitor2 "DVI-D-1"
+set $monitor1 "HDMI-A-0"
+set $monitor2 "DVI-D-0"
 
 # use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -158,9 +158,8 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # configure i3 gaps
-for_window [class="^.*"] border pixel 2
-gaps outer 5
-gaps inner 10
+for_window [class="^.*"] border pixel 0
+gaps inner 30
 
 # configure monitors
 exec --no-startup-id xrandr --output $monitor1 --primary --pos 0x0 --rotate normal --output $monitor2 --pos 1920x0 --rotate normal
@@ -169,7 +168,7 @@ exec --no-startup-id xrandr --output $monitor1 --primary --pos 0x0 --rotate norm
 exec_always --no-startup-id picom -bcf --experimental-backends
 
 # set a wallpaper
-exec_always --no-startup-id feh --bg-scale $HOME/.config/.wallpaper.jpg
+exec_always --no-startup-id feh --bg-scale $HOME/.config/.wallpaper.png
 
 # run polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh

@@ -1,6 +1,6 @@
 [monitors]
-1 = HDMI-1
-2 = DVI-D-1
+1 = HDMI-A-0
+2 = DVI-D-0
 
 [colors]
 background = #CC0b1335
