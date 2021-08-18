@@ -21,8 +21,8 @@ This document describes the whole installation process of my Arch environment.
 5. Install `git` and `openssh`
 6. Install `neovim` and `code` (editors)
     * To enable the Visual Studio Code marketplace install `code-marketplace`
-7. Install `brave-bin` (web browser)
-    * To set it as the default browser install `xdg-utils` and run `xdg-settings set default-web-browser brave.desktop`
+7. Install `chromium` (web browser)
+    * To set it as the default browser install `xdg-utils` and run `xdg-settings set default-web-browser chromium.desktop`
 8. Install `p7zip` (zip utility)
 9. Install `ranger` (file manager)
 
