@@ -28,7 +28,7 @@ bindsym $mod+Shift+q kill
 bindsym $mod+Escape exec i3lock -c 000000
 
 # use $mod+d to start rofi
-bindcode $mod+40 exec "rofi -modi drun,run -show drun"
+bindcode $mod+40 exec "rofi -modi drun,run -show drun -no-default-config"
 
 # use $mod+jklö to change focus
 bindsym $mod+j focus left
