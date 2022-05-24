@@ -30,11 +30,11 @@ bindsym $mod+Escape exec i3lock -c 000000
 # use $mod+d to start rofi
 bindcode $mod+40 exec "rofi -modi drun,run -show drun -no-default-config"
 
-# use $mod+jklö to change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+odiaeresis focus right
+# use $mod+hjkl to change focus
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
 
 # use $mod+arrow_keys to change focus
 bindsym $mod+Left focus left
@@ -42,11 +42,11 @@ bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
-# use $mod+Shift+jklö to move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+odiaeresis move right
+# use $mod+Shift+hjkl to move focused window
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
 
 # use $mod+Shift+arrow_keys to move focused window
 bindsym $mod+Shift+Left move left
@@ -54,11 +54,8 @@ bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
-# use $mod+h to split in horizontal orientation
-bindsym $mod+h split h
-
-# use $mod+v to split in vertical orientation
-bindsym $mod+v split v
+# use $mod+v to toggle the split direction
+bindsym $mod+v split toggle
 
 # use $mod+f to enter fullscreen mode
 bindsym $mod+f fullscreen toggle
