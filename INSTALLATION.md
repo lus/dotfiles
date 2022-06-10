@@ -38,7 +38,9 @@ This document describes the whole installation process of my Arch environment.
 7. Install `dunst` for notifications
 8. Install `rofi` as application launcher
 9. Install `feh` to display the background
-10. Copy the dotfiles (leave out `.oh-my-zsh/custom/aliases.zsh` if replacements are not wished/installed)
+10. Install [`vim-plug`](https://github.com/junegunn/vim-plug#unix-linux) as neovim plugin manager
+11. Copy the dotfiles (leave out `.oh-my-zsh/custom/aliases.zsh` if replacements are not wished/installed)
+    * `.config/nvim/lua/user/lsp.lua` contains several LSP configurations that may fail without those languages & language servers installed
 
 ## 4.) Recommended Replacements
 
