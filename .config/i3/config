@@ -37,10 +37,10 @@ bindsym $mod+k focus up
 bindsym $mod+l focus right
 
 # use $mod+arrow_keys to change focus
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
+# bindsym $mod+Left focus left
+# bindsym $mod+Down focus down
+# bindsym $mod+Up focus up
+# bindsym $mod+Right focus right
 
 # use $mod+Shift+hjkl to move focused window
 bindsym $mod+Shift+h move left
@@ -49,10 +49,10 @@ bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
 # use $mod+Shift+arrow_keys to move focused window
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
+# bindsym $mod+Shift+Left move left
+# bindsym $mod+Shift+Down move down
+# bindsym $mod+Shift+Up move up
+# bindsym $mod+Shift+Right move right
 
 # use $mod+v to toggle the split direction
 bindsym $mod+v split toggle
