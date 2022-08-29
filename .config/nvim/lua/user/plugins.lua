@@ -21,6 +21,9 @@ Plug "saadparwaiz1/cmp_luasnip"
 -- LSP
 Plug "neovim/nvim-lspconfig"
 
+-- Discord presence
+Plug "andweeb/presence.nvim"
+
 vim.call("plug#end")
 
 -- Set up the color scheme
